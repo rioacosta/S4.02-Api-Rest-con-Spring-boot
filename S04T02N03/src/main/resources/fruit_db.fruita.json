@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6850639fa1e271fdfdd423b2"
+  },
+  "name": "Tomate de arbol",
+  "amountKilos": 10,
+  "_class": "cat.itacademy.s04.t02.n03.model.Fruit"
+},
+{
+  "_id": {
+    "$oid": "685063baa1e271fdfdd423b4"
+  },
+  "name": "Curuba",
+  "amountKilos": 30,
+  "_class": "cat.itacademy.s04.t02.n03.model.Fruit"
+},
+{
+  "_id": {
+    "$oid": "685063cda1e271fdfdd423b5"
+  },
+  "name": "Tamarindo",
+  "amountKilos": 40,
+  "_class": "cat.itacademy.s04.t02.n03.model.Fruit"
+}]

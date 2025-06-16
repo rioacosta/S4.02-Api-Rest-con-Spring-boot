@@ -1,0 +1,9 @@
+2025-06-16 16:55:29.496267+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FRUIT" not found (this database is empty); SQL statement:
+select f1_0.id,f1_0.amount_kilos,f1_0.name from fruit f1_0 [42104-232]
+2025-06-16 16:55:40.119482+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FRUIT" not found (this database is empty); SQL statement:
+insert into fruit (amount_kilos,name,id) values (?,?,default) [42104-232]
+2025-06-16 17:18:21.085828+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FRUIT" not found (this database is empty); SQL statement:
+insert into fruit (amount_kilos,name,id) values (?,?,default) [42104-232]
