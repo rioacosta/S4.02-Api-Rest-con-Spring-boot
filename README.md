@@ -1,74 +1,45 @@
-🚀 S4.02 API REST con Spring Boot
-Este proyecto implementa una API REST utilizando Spring Boot. Se centra en la gestión de una entidad fruit, con integración de Lombok para simplificar la creación de modelos. Está replicado en tres niveles:
+# S4.02 Api-Rest-con-Spring-boot
 
-Nivel 1: Persistencia en H2 embebida.
+Este proyecto implementa una API REST utilizando Spring Boot. Se enfoca en la gestión de una entidad fruit, con integración de Lombok para simplificar la creación de modelos. Está replicado en tres niveles, el primero con persistencia en H2 embedida, el segundo nivel con MySql y el trecero con MongoDB. 
 
-Nivel 2: Persistencia en MySQL.
-
-Nivel 3: Persistencia en MongoDB.
+##🚀 Tecnologías utilizadas Java (100% del código) Spring Boot – Framework para el desarrollo de aplicaciones web Lombok – Reducción del código boilerplate en Java 
 
 
-🛠️ Tecnologías utilizadas
+##📂 Estructura del proyecto La estructura es igual para todos los niveles excepto por las bases de datos, en el siguiente diagrama se explica: 
 
-Java – Lenguaje principal del proyecto.
-
-Spring Boot – Framework para el desarrollo de aplicaciones web.
-
-Lombok – Reducción del código repetitivo en los modelos.
-
-Maven/Gradle – Gestión de dependencias.
-
-📂 Estructura del proyecto
-La estructura es idéntica para todos los niveles, excepto en la configuración de la base de datos.
-
-S4.02-Api-Rest-con-Spring-boot/
-├── database/                  #<-------------- Solo en el Nivel 1 (Base de datos H2)
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/
-│   │   │   ├── controllers/   # Controladores REST
-│   │   │   ├── models/        # Modelos de datos
-│   │   │   ├── repositories/  # Acceso a base de datos
-│   │   │   ├── services/      # Lógica de negocio
-│   │   │   ├── Application.java
-│   │   ├── resources/
-│   │       ├── application.properties
-│   │       ├── database_config.json  #<------------Sera un documento diferente para los niveles 2 y 3 pero en la misma direccion.
-│   ├── test/
-│       ├── java/com/example/
-│           ├── tests/
-│   
-├── pom.xml
-└── README.md
+S4.02-Api-Rest-con-Spring-boot/ 
+├── database <------------Esta carpeta esta solo en el nivel 1, contiene la base de datos hecha con H2. ├── src/ │ ├── main/ │ │ ├── java/com/example/ │ │ │ ├── controllers/ │ │ │ ├── models/ │ │ │ ├── repositories/ │ │ │ ├── services/ │ │ │ ├── Application.java │ │ ├── resources/ │ │ ├── application.properties │ │ ├── documento de base de datos <------------Sera un documento diferente para los niveles 2 y 3 pero en la misma ubicacion. │ ├── test/ │ ├── java/com/example/ │ ├── tests/ │ ├── pom.xml └── README.md 
 
 
-🚀 Cómo ejecutar el proyecto
-Clonar el repositorio
+##🚀 Cómo ejecutar el proyecto
 
-bash
-git clone https://github.com/rioacosta/S4.02-Api-Rest-con-Spring-boot.git
+Clonar el repositorio bash git clone 
+
+https://github.com/rioacosta/S4.02-Api-Rest-con-Spring-boot.git 
+
 Instalar dependencias
 
-bash
-mvn install
+bash mvn install 
+
 Ejecutar la aplicación
 
-bash
-mvn spring-boot:run
-Acceder a la API La API estará disponible en http://localhost:8080/.
+bash mvn 
+
+spring-boot:run 
+
+Acceder a la API La API estará disponible en http://localhost:8080/. 
 
 
+##🛠️Pruebalo en tu navegador o Postman: 
 
-📡 Prueba la API en tu navegador o Postman:
+http://localhost:8080/fruita/add 
 
-Agregar una fruta GET http://localhost:8080/fruita/add
+http://localhost:8080/fruita/update 
 
-Actualizar una fruta PUT http://localhost:8080/fruita/update
+http://localhost:8080/fruita/delete/{id} 
 
-Eliminar una fruta por ID DELETE http://localhost:8080/fruita/delete/{id}
+http://localhost:8080/fruita/getOne/{id} 
 
-Obtener una fruta por ID GET http://localhost:8080/fruita/getOne/{id}
+http://localhost:8080/fruita/getAll 
 
-Obtener todas las frutas GET http://localhost:8080/fruita/getAll
-
-Buscar frutas por nombre (Solo niveles 2 y 3) GET http://localhost:8080/fruita/getByName
+http://localhost:8080/fruita/getByName   <----Solo para los niveles 2 y 3.
