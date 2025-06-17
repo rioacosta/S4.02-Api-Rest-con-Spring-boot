@@ -21,38 +21,22 @@ La estructura es igual para todos los niveles excepto por las bases de datos, en
 S4.02-Api-Rest-con-Spring-boot/
 
 ├── database                    <------------Esta carpeta esta solo en el nivel 1, contiene la base de datos hecha con H2.
-
 ├── src/
-
 │   ├── main/
-
 │   │   ├── java/com/example/
-
 │   │   │   ├── controllers/
-
 │   │   │   ├── models/
-
 │   │   │   ├── repositories/
-
 │   │   │   ├── services/
-
 │   │   │   ├── Application.java
-
 │   │   ├── resources/
-
 │   │       ├── application.properties
-
 │   │       ├── documento de base de datos  ------------Sera un documento diferente para los niveles 2 y 3 pero en la misma ubicacion.
-
 │   ├── test/
-
 │       ├── java/com/example/
-
 │           ├── tests/
-
 │   
 ├── pom.xml
-
 └── README.md
 
 
