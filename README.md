@@ -16,6 +16,7 @@ Lombok – Reducción del código boilerplate en Java
 La estructura es igual para todos los niveles excepto por las bases de datos, en el siguiente diagrama se explica: 
 
 S4.02-Api-Rest-con-Spring-boot/
+```
 ├── database/                  # Solo en el Nivel 1 (Base de datos H2)
 ├── src/
 │   ├── main/
@@ -34,6 +35,8 @@ S4.02-Api-Rest-con-Spring-boot/
 │   
 ├── pom.xml
 └── README.md
+```
+
 
 
 # 🚀 Cómo ejecutar el proyecto
