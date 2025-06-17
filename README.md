@@ -21,31 +21,31 @@ S4.02-Api-Rest-con-Spring-boot/
 
 ├── src/
 
-│   ├── main/
+│     ├── main/
 
-│   │   ├── java/com/example/
+│     │       ├── java/com/example/
 
-│   │   │   ├── controllers/   # Controladores REST
+│     │       │       ├── controllers/   # Controladores REST
 
-│   │   │   ├── models/        # Modelos de datos
+│     │       │       ├── models/        # Modelos de datos
 
-│   │   │   ├── repositories/  # Acceso a base de datos
+│     │       │       ├── repositories/  # Acceso a base de datos
 
-│   │   │   ├── services/      # Lógica de negocio
+│     │       │       ├── services/      # Lógica de negocio
 
-│   │   │   ├── Application.java
+│     │       │       ├── Application.java
 
-│   │   ├── resources/
+│     │       ├── resources/
 
-│   │       ├── application.properties
+│     │             ├── application.properties
 
-│   │       ├── database_config.json  # Configuración específica (varía según el nivel)
+│     │             ├── database_config.json  # Configuración específica (varía según el nivel)
 
-│   ├── test/
+│     ├── test/
 
-│       ├── java/com/example/
+│             ├── java/com/example/
 
-│           ├── tests/
+│             ├── tests/
 
 │   
 
