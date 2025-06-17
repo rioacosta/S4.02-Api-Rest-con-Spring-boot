@@ -17,18 +17,18 @@ La estructura es igual para todos los niveles excepto por las bases de datos, en
 
 S4.02-Api-Rest-con-Spring-boot/
 ```
-├── database/                  # <------ Solo en el Nivel 1 (Base de datos H2)
+├── database/                   <------ Solo en el Nivel 1 (Base de datos H2)
 ├── src/
 │   ├── main/
 │   │   ├── java/com/example/
-│   │   │   ├── controllers/   # Controladores REST
-│   │   │   ├── models/        # Modelos de datos
-│   │   │   ├── repositories/  # Acceso a base de datos
-│   │   │   ├── services/      # Lógica de negocio
+│   │   │   ├── controllers/  
+│   │   │   ├── models/        
+│   │   │   ├── repositories/ 
+│   │   │   ├── services/     
 │   │   │   ├── Application.java
 │   │   ├── resources/
 │   │       ├── application.properties
-│   │       ├── database        # <------ Documento base de datos, diferente para niveles 2 y 3.
+│   │       ├── database         <------ Documento base de datos, diferente para niveles 2 y 3.
 │   ├── test/
 │       ├── java/com/example/
 │           ├── tests/
