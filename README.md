@@ -16,41 +16,23 @@ Lombok – Reducción del código boilerplate en Java
 La estructura es igual para todos los niveles excepto por las bases de datos, en el siguiente diagrama se explica: 
 
 S4.02-Api-Rest-con-Spring-boot/
-
 ├── database/                  # Solo en el Nivel 1 (Base de datos H2)
-
 ├── src/
-
-│     ├── main/
-
-│     │       ├── java/com/example/
-
-│     │       │       ├── controllers/   # Controladores REST
-
-│     │       │       ├── models/        # Modelos de datos
-
-│     │       │       ├── repositories/  # Acceso a base de datos
-
-│     │       │       ├── services/      # Lógica de negocio
-
-│     │       │       ├── Application.java
-
-│     │       ├── resources/
-
-│     │             ├── application.properties
-
-│     │             ├── database_config.json  # Configuración específica (varía según el nivel)
-
-│     ├── test/
-
-│             ├── java/com/example/
-
-│             ├── tests/
-
+│   ├── main/
+│   │   ├── java/com/example/
+│   │   │   ├── controllers/   # Controladores REST
+│   │   │   ├── models/        # Modelos de datos
+│   │   │   ├── repositories/  # Acceso a base de datos
+│   │   │   ├── services/      # Lógica de negocio
+│   │   │   ├── Application.java
+│   │   ├── resources/
+│   │       ├── application.properties
+│   │       ├── database_config.json  # Configuración específica (varía según el nivel)
+│   ├── test/
+│       ├── java/com/example/
+│           ├── tests/
 │   
-
 ├── pom.xml
-
 └── README.md
 
 
